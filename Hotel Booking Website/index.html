@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars">
+        </div>
+        <a href="#" class="logo"><span>H</span>otel</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="gallery.html">gallery</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+            <a href="blogs.html">blogs</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your email">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>forgrt password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>welcome to A global icon of luxury</h3>
+            <p>dicover new places with us, luxury awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="assets/img/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="assets/img/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="assets/img/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="assets/img/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="assets/img/vid-2.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="assets/img/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- about us section starts  -->
+
+    <section class="about" id="about">
+        <h1 class="heading">
+            <span>a</span>
+            <span>b</span>
+            <span>o</span>
+            <span>u</span>
+            <span>t</span>
+            <span class="space"></span>
+            <span>u</span>
+            <span>s</span>
+        </h1>
+
+        <div class="row">
+            <div class="img">
+                <img decoding="async" src="assets/img/bar-peepal-resort.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>A World of Hospitality Excellence</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Officia minus id sequi quibusdam. Possimus dolores iusto quam officiis dignissimos quo! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit
+                    farhan debitis id nulla consequatur incidunt, ipsum aliquam facere maiores voluptates architecto!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem expedita corrupti officia velit soluta ab quod reprehenderit. Numquam, sed ad.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    <!-- about section starts  -->
+
+    <!-- book section starts      -->
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="img">
+                <img decoding="async" src="assets/img/book-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+    <!-- book section ends      -->
+
+    <!-- counter section starts  -->
+
+    <section class="counter" id="counter">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <span class="num" data-val="400">000</span>
+                <span class="text">meals delivery</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-smile-beam"></i>
+                <span class="num" data-val="340">000</span>
+                <span class="text">happy customers</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-list"></i>
+                <span class="num" data-val="225">000</span>
+                <span class="text">menu items</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-star"></i>
+                <span class="num" data-val="280">000</span>
+                <span class="text">five stars</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- counter section ends  -->
+
+    <!-- rooms and suites starts  -->
+    <section class="room" id="room">
+        <h1 class="heading">
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span class="space"></span>
+            <span>r</span>
+            <span>o</span>
+            <span>o</span>
+            <span>m</span>
+            <span>s</span>
+        </h1>
+        <p class="sub-heading">The concept and service of the best luxury hotels in Nepal in our sophisticated.</p>
+
+        <div class="swiper room-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/img/room4.jpg) no-repeat;">
+                        <!-- <img decoding="async" src="assets/img/pic1.jpeg" alt=""> -->
+                        <h3>luxurious room</h3>
+                        <p>2 adult 1 children</p>
+                        <p>started from $500</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/img/room1.jpg) no-repeat;">
+                        <!-- <img decoding="async" src="assets/img/pic2.jpg" alt=""> -->
+                        <h3>luxurious room</h3>
+                        <p>2 adult 1 children</p>
+                        <p>started from $500</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/img/room2.webp) no-repeat;">
+                        <!-- <img decoding="async" src="assets/img/pic3.jpg" alt=""> -->
+                        <h3>luxurious room</h3>
+                        <p>2 adult 1 children</p>
+                        <p>started from $500</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/img/room3.jpg) no-repeat;">
+                        <!-- <img decoding="async" src="assets/img/pic4.jpg" alt=""> -->
+                        <h3>luxurious room</h3>
+                        <p>2 adult 1 children</p>
+                        <p>started from $500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- rooms and suites ends  -->
+
+    <!-- our team section starts  -->
+
+    <section class="our-team">
+        <h1 class="heading">
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span class="space"></span>
+            <span>t</span>
+            <span>e</span>
+            <span>a</span>
+            <span>m</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img decoding="async" src="assets/img/pic3.jpg" alt="">
+                <div class="content">
+                    <h3>Luna Turner</h3>
+                    <p>Founder</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="assets/img/pic3.jpg" alt="">
+                <div class="content">
+                    <h3>Luna Turner</h3>
+                    <p>manager</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="assets/img/pic3.jpg" alt="">
+                <div class="content">
+                    <h3>Luna Turner</h3>
+                    <p>assistant manager</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our team section starts  -->
+
+    <!-- rewiew section starts  -->
+
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="assets/img/pic1.jpeg" alt="">
+                        <h3>Lalisa Bey</h3>
+                        <p>Lorem Ipsum is simply dummy text of the farhan and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            farhan and typesetting industry.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="assets/img/pic2.jpg" alt="">
+                        <h3>Edward Bey</h3>
+                        <p>Lorem Ipsum is simply dummy text of the farhan and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            farhan and typesetting industry.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="assets/img/pic3.jpg" alt="">
+                        <h3>Jenna Bey</h3>
+                        <p>Lorem Ipsum is simply dummy text of the farhan and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            farhan and typesetting industry.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="assets/img/pic4.jpg" alt="">
+                        <h3>Edward Bey</h3>
+                        <p>Lorem Ipsum is simply dummy text of the farhan and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            Lorem Ipsum is simply dummy text of the farhan and typesetting industry
+                            farhan and typesetting industry.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- rewiew section ends  -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading">
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span class="space"></span>
+            <span>b</span>
+            <span>l</span>
+            <span>o</span>
+            <span>g</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img decoding="async" src="assets/img/hotel-barahi.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user</a>
+                        <a href="#"> <i class="fas fa-calender"></i> 1st jan, 2022</a>
+                    </div>
+                    <h3>Complimentary Luxury Toiletries</h3>
+                    <p>Small details can make a big difference. High-quality, complimentary toiletries from luxury
+                        brands like Bulgari or Aesop can make you feel like royalty. They're not just practical; they're
+                        a luxurious touch that enhances your daily routine....</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="assets/img/bar-peepal-resort.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user</a>
+                        <a href="#"> <i class="fas fa-calender"></i> 1st jan, 2022</a>
+                    </div>
+                    <h3>Complimentary Luxury Toiletries</h3>
+                    <p>Small details can make a big difference. High-quality, complimentary toiletries from luxury
+                        brands like Bulgari or Aesop can make you feel like royalty. They're not just practical; they're
+                        a luxurious touch that enhances your daily routine....</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="assets/img/5e14c8de2f2e019362eafaf9_Temple Tree Resort And Spa.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user</a>
+                        <a href="#"> <i class="fas fa-calender"></i> 1st jan, 2022</a>
+                    </div>
+                    <h3>Complimentary Luxury Toiletries</h3>
+                    <p>Small details can make a big difference. High-quality, complimentary toiletries from luxury
+                        brands like Bulgari or Aesop can make you feel like royalty. They're not just practical; they're
+                        a luxurious touch that enhances your daily routine.....</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- blogs section ends  -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="img">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28125.920511530374!2d83.936015930259!3d28.215208975895223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995951e14d5a941%3A0xd04523f7f375b83!2sPokhara%20Lakeside!5e0!3m2!1sen!2snp!4v1695551217580!5m2!1sen!2snp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+
+    <!-- contact section starts  -->
+
+    <!-- brand section starts  -->
+
+    <section class="brand-container">
+        <div class="swiper mySwiper brand-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide"><img decoding="async" src="assets/img/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img decoding="async" src="assets/img/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img decoding="async" src="assets/img/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img decoding="async" src="assets/img/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img decoding="async" src="assets/img/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img decoding="async" src="assets/img/6.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- brand section ends  -->
+
+    <!-- newletter section starts  -->
+    <section class="newsletter" id="newsletter">
+        <div class="content">
+            <h1>subscribe our <span>newletter</span></h1>
+            <form action="">
+                <input type="email" name="" id="" placeholder="enter your email address" class="email">
+                <input type="submit" class="btn" value="subscribe">
+            </form>
+        </div>
+    </section>
+    <!-- newletter section ends  -->
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam natus asperiores voluptas aliquam vitae odio. Beatae doloribus facere nostrum magni.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">pokhara</a>
+                <a href="#">Kathmandu</a>
+                <a href="#">Biratnagar</a>
+                <a href="#">Birgunj</a>
+                <a href="#">Lalitpur</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">package</a>
+                <a href="#">service</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+                <a href="#">book</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">likedin</a>
+            </div>
+        </div>
+        <h1 class="credit"> created by <span>Tilak Parajuli</span> | all rights reserved!! </h1>
+    </section>
+
+    <!-- footer section starts  -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>
+    <script src="assets/js/main.js" defer data-deferred="1"></script>
+</body>
+
+</html>
